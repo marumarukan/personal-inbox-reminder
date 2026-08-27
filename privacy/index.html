@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for Personal Inbox Reminder, including Gmail data access, AI processing, Discord delivery, storage, retention, and revocation.">
+  <link rel="canonical" href="https://inbox-reminder.vodscout.com/privacy/">
+  <link rel="stylesheet" href="/assets/site.css">
+  <title>Privacy Policy | Personal Inbox Reminder</title>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Personal Inbox Reminder home">
+      <span class="brand-mark" aria-hidden="true">IR</span>
+      <span>Personal Inbox Reminder</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="/">Overview</a>
+      <a aria-current="page" href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </nav>
+  </header>
+
+  <main id="content" class="document-shell">
+    <header class="document-header">
+      <p class="eyebrow">Privacy Policy</p>
+      <h1>How Gmail data is accessed and handled</h1>
+      <p class="lede">This policy describes the data practices of Personal Inbox Reminder, a private utility used by one operator.</p>
+      <dl class="document-meta">
+        <div><dt>Effective date</dt><dd>August 27, 2026</dd></div>
+        <div><dt>Contact</dt><dd><a href="mailto:valovodfinder@gmail.com">valovodfinder@gmail.com</a></dd></div>
+      </dl>
+    </header>
+
+    <article class="policy-content">
+      <section id="scope">
+        <h2>1. Scope and operator</h2>
+        <p>Personal Inbox Reminder is a non-commercial, personal-use utility operated by the owner of this domain. It is not offered for public account registration and is not affiliated with or endorsed by Google, Gmail, Discord, OpenAI, or Riot Games.</p>
+      </section>
+
+      <section id="google-data">
+        <h2>2. Google user data accessed</h2>
+        <p>The app requests only the OAuth scope <code>https://www.googleapis.com/auth/gmail.readonly</code>. The application code uses this permission to retrieve:</p>
+        <ul>
+          <li>Gmail message and thread identifiers;</li>
+          <li>sender, recipient, subject, and date headers;</li>
+          <li>limited text from recent messages in a relevant thread;</li>
+          <li>attachment file names, but not attachment file contents;</li>
+          <li>Gmail history identifiers needed to detect newly received inbox messages.</li>
+        </ul>
+        <p>Although the scope can permit broader read-only access, the app is designed to query recent inbox activity and relevant thread context only. It does not request permission to send, modify, label, archive, or delete email.</p>
+      </section>
+
+      <section id="use">
+        <h2>3. How Google user data is used</h2>
+        <p>Google user data is used solely to identify messages that may require the operator to take action. Examples include an explicit deadline, a direct question, a requested submission, an interview or test preparation item, an account action, or another obligation where inaction may create a problem.</p>
+        <p>The app does not use Google user data for advertising, credit or lending decisions, user profiling, resale, or generalized AI model training by this application.</p>
+      </section>
+
+      <section id="processing">
+        <h2>4. Processing and disclosure to service providers</h2>
+        <p>The app runs through Hermes Agent on the operator’s personal computer. To classify whether a message requires action, limited thread content may be sent to the AI model provider configured by the operator. The current configuration uses an OpenAI service. AI-provider processing is governed by the applicable provider terms and privacy policy.</p>
+        <p>When a reminder is warranted, a concise summary may be sent through Discord to a private destination controlled by the operator. The app does not intentionally post full Gmail threads to public channels.</p>
+        <p>These service providers process data only to provide the reminder workflow selected by the operator. The app does not sell Google user data or disclose it to data brokers or advertising platforms.</p>
+      </section>
+
+      <section id="storage">
+        <h2>5. Local storage and retention</h2>
+        <p>OAuth credentials are stored locally in the operator’s Hermes profile. The collector’s state file stores Gmail message or thread identifiers, a Gmail history cursor, first-seen timestamps, and acknowledgement status so messages are not repeatedly notified.</p>
+        <p>The collector state does not intentionally persist complete message bodies. However, limited Gmail content and classification results may appear in local Hermes session or log history. Copies sent to the configured AI provider or Discord may be retained according to those services’ policies and the operator’s account settings.</p>
+        <p>Pending state is retained until the message is acknowledged or the operator deletes the state. A bounded acknowledgement history is maintained to prevent duplicate notifications. Local credentials, state, sessions, and logs are retained until removed by the operator.</p>
+      </section>
+
+      <section id="security">
+        <h2>6. Security controls</h2>
+        <ul>
+          <li>The app uses the narrow read-only Gmail scope required for the workflow.</li>
+          <li>OAuth credentials and reminder state are stored on the operator’s computer rather than in this public website.</li>
+          <li>This website does not provide a login form and does not receive Gmail content.</li>
+          <li>The website uses no advertising technology and no analytics or tracking cookies.</li>
+        </ul>
+        <p>No system can guarantee absolute security. The operator maintains responsibility for device security, Google account security, Discord access, and configured AI-provider access.</p>
+      </section>
+
+      <section id="control">
+        <h2>7. Access, revocation, and deletion</h2>
+        <p>The operator may stop access at any time by revoking the app in the Google Account’s third-party connections or security settings. The operator may also delete the locally stored OAuth token, reminder state, Hermes sessions and logs, and previously delivered Discord messages.</p>
+        <p>After access is revoked, the app can no longer retrieve new Gmail data unless the operator grants permission again.</p>
+      </section>
+
+      <section id="limited-use">
+        <h2>8. Google API Services User Data Policy</h2>
+        <p>The app’s use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noreferrer">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+      </section>
+
+      <section id="changes">
+        <h2>9. Changes to this policy</h2>
+        <p>This policy may be updated when the app’s functionality, providers, data handling, or legal requirements change. The effective date at the top of this page will be updated when material changes are published.</p>
+      </section>
+
+      <section id="contact">
+        <h2>10. Contact</h2>
+        <p>Questions about this policy or requests concerning locally stored data may be sent to <a href="mailto:valovodfinder@gmail.com">valovodfinder@gmail.com</a>.</p>
+      </section>
+    </article>
+
+    <section class="language-note" lang="ja" aria-labelledby="japanese-privacy-summary">
+      <p class="section-label">日本語概要</p>
+      <h2 id="japanese-privacy-summary">データの取り扱い</h2>
+      <p>本ツールは個人利用のため、Gmailの読み取り専用権限で最近の受信メールと関連スレッドの一部を取得します。要対応かを判定するため、設定されたAIサービス（現在はOpenAI）へ限定的な本文情報を送り、必要な場合だけ非公開のDiscord通知先へ要約を送ります。メールの送信・変更・削除、広告利用、データ販売は行いません。Googleアカウントからいつでもアクセス権を取り消せます。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Personal Inbox Reminder</span>
+    <span class="footer-links"><a href="/">Overview</a><a href="/terms/">Terms</a><a href="mailto:valovodfinder@gmail.com">Contact</a></span>
+  </footer>
+</body>
+</html>

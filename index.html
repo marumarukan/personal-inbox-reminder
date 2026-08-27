@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal Inbox Reminder is a private, read-only Gmail reminder utility that identifies messages requiring action and sends concise reminders to a private Discord destination.">
+  <link rel="canonical" href="https://inbox-reminder.vodscout.com/">
+  <link rel="stylesheet" href="/assets/site.css">
+  <title>Personal Inbox Reminder</title>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Personal Inbox Reminder home">
+      <span class="brand-mark" aria-hidden="true">IR</span>
+      <span>Personal Inbox Reminder</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a aria-current="page" href="/">Overview</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+    </nav>
+  </header>
+
+  <main id="content" class="page-shell">
+    <section class="intro">
+      <p class="eyebrow">Private personal utility</p>
+      <h1>Know which messages need action—without changing your mailbox.</h1>
+      <p class="lede">Personal Inbox Reminder reviews recent Gmail threads with read-only access, identifies messages that may require the operator’s attention, and sends a concise reminder to a private Discord destination.</p>
+      <div class="status-line" aria-label="Application boundaries">
+        <span>Read-only Gmail access</span>
+        <span>No public sign-ups</span>
+        <span>No mail modification</span>
+      </div>
+    </section>
+
+    <section class="content-grid" aria-labelledby="how-it-works">
+      <div>
+        <p class="section-label">Purpose</p>
+        <h2 id="how-it-works">A narrow reminder workflow</h2>
+        <p>The utility exists for one purpose: reducing the chance that its operator overlooks an email containing a deadline, direct request, account action, interview preparation item, or other necessary follow-up.</p>
+      </div>
+      <ol class="process-list">
+        <li>
+          <strong>Read recent inbox activity</strong>
+          <span>The app retrieves recent message headers and limited message text through the Gmail API using <code>gmail.readonly</code>.</span>
+        </li>
+        <li>
+          <strong>Classify for required action</strong>
+          <span>Relevant thread content is processed by the operator’s locally configured Hermes Agent and AI service to decide whether a reminder is warranted.</span>
+        </li>
+        <li>
+          <strong>Notify privately</strong>
+          <span>Only a concise action-oriented reminder is delivered to the operator’s private Discord destination.</span>
+        </li>
+      </ol>
+    </section>
+
+    <section class="boundary-section" aria-labelledby="boundaries">
+      <div class="boundary-heading">
+        <p class="section-label">Boundaries</p>
+        <h2 id="boundaries">What this utility does not do</h2>
+      </div>
+      <dl class="boundary-list">
+        <div>
+          <dt>Does not send email</dt>
+          <dd>The app cannot compose or send messages.</dd>
+        </div>
+        <div>
+          <dt>Does not alter Gmail</dt>
+          <dd>It cannot mark messages read, change labels, archive, or delete mail.</dd>
+        </div>
+        <div>
+          <dt>Does not sell or advertise</dt>
+          <dd>Google user data is not sold, used for advertising, or used to build marketing profiles.</dd>
+        </div>
+        <div>
+          <dt>Does not replace source mail</dt>
+          <dd>Reminders may be incomplete or delayed. The operator must verify important details in Gmail.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="disclosure" aria-labelledby="data-path">
+      <div>
+        <p class="section-label">Data path</p>
+        <h2 id="data-path">Designed for a single operator</h2>
+      </div>
+      <p>OAuth credentials and queue state are stored on the operator’s computer. Limited Gmail content is provided to the configured AI processor for classification, and reminder text is sent to Discord. Details, retention, and revocation instructions are described in the <a href="/privacy/">Privacy Policy</a>.</p>
+    </section>
+
+    <section class="language-note" lang="ja" aria-labelledby="japanese-summary">
+      <p class="section-label">日本語概要</p>
+      <h2 id="japanese-summary">個人用の要対応メール通知ツールです</h2>
+      <p>Gmailを読み取り専用で確認し、締切や回答依頼など、対応が必要と判断したメールだけを非公開のDiscord通知先へ知らせます。メールの送信、既読化、ラベル変更、アーカイブ、削除は行いません。重要事項は必ずGmailの原文で確認してください。</p>
+    </section>
+
+    <aside class="domain-note">
+      <strong>Domain disclosure</strong>
+      <p>This utility is independently operated and technically separate from the VALORANT VOD search service hosted at <a href="https://vodscout.com/">vodscout.com</a>. Both are maintained by the same domain operator.</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <span>Personal Inbox Reminder</span>
+    <span class="footer-links"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="mailto:valovodfinder@gmail.com">Contact</a></span>
+  </footer>
+</body>
+</html>
